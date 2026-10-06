@@ -61,12 +61,12 @@ header("location:index.php");
 
                     <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">Add Customer Details</h1>
-                    <form action="udpc.php" method="post" enctype="multipart/form-data">
+                    <form action="ins.php" method="post" enctype="multipart/form-data">
                        <p>Name</p>
                        <p><input type="text" name="cname"></p>
                        <p>Contact Number</p>
                        <p><input type="text" name="number"></p>
-                        <p><input type="submit" name="save" value="Add Product"></p>
+                        <p><input type="submit" name="save" value="Add Customer"></p>
                     </form>
 
                 </div>

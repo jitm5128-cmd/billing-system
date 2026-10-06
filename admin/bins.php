@@ -1,5 +1,5 @@
 <?php
-include ("<admin_inc/db.php");
+include ("admin_inc/db.php");
 
 if(isset($_POST['save'])){
 $ci=$_POST['id'];

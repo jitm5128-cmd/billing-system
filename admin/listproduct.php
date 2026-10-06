@@ -83,8 +83,20 @@ header("location:index.php");
             <td> <?php echo $row['date']; ?></td>
             <td> <?php echo $row['description']; ?></td>
             <td> <?php echo $row['bar']; ?></td>
-            <td><a onclick="return confirm('Are You Sure?');" href="delete.php?did=<?php echo $row['productid']; ?>" class="btn btn-danger">Delete</a></td>
-            <td><a href="edit.php?eid=<?php echo $row['productid']; ?>" class="btn btn-success">Edit</a></td>
+            <td>
+    <a onclick="return confirm('Are You Sure?');"
+       href="delete.php?did=<?php echo $row['id']; ?>"
+       class="btn btn-danger">
+       Delete
+    </a>
+</td>
+
+<td>
+    <a href="edit.php?eid=<?php echo $row['id']; ?>"
+       class="btn btn-success">
+       Edit
+    </a>
+</td>
         </tr>
         <?php } ?>
     </tbody>

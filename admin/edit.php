@@ -6,7 +6,7 @@ header("location:index.php");
 
 include ("admin_inc/db.php");
 $id=$_GET['eid'];
-$sel="SELECT * FROM details WHERE productid='$id'";
+$sel="SELECT * FROM details WHERE id='$id'";
 $rs=$con->query($sel);
 $row=$rs->fetch_assoc();
 
@@ -72,7 +72,7 @@ $row=$rs->fetch_assoc();
                     <!-- Page Heading -->
                     <h1 class="h3 mb-4 text-gray-800">Add product</h1>
                     <form action="udp.php" method="post" enctype="multipart/form-data">
-                    <input type="hidden" name="id" value="<?php echo $row['productid']; ?>">
+                    <input type="hidden" name="id" value="<?php echo $row['id']; ?>">
                         <p>Category</p>
                         <p>
                             <select name="cate" value="<?php echo $row['cate']?>">

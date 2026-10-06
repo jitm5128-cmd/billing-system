@@ -5,7 +5,9 @@ $cn=$_POST['cname'];
 $cp=$_POST['number'];
 
 $ins="INSERT INTO customer SET cname='$cn',number='$cp'";
-$con->query($ins);
+if($con->query($ins)){
+    header("location:listcustomer.php");
+}
 ?>
 
 <?php } else{
